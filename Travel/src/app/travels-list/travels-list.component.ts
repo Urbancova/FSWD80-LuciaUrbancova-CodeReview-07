@@ -36,7 +36,8 @@ export class TravelsListComponent implements OnInit {
    filterCondition(travels){
      return travels.fullName.toLowerCase().indexOf(this.searchText.toLowerCase()) != -1 ||
       travels.email.toLowerCase().indexOf(this.searchText.toLowerCase()) != -1 ||
-      travels.mobile.indexOf(this.searchText) != -1 
+      travels.mobile.indexOf(this.searchText) != -1 ||
+      travels.location.toLowerCase().indexOf(this.searchText.toLowerCase()) != -1 
    }
 
 }

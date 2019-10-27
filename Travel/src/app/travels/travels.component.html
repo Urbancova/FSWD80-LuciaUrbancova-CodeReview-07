@@ -1,21 +1,19 @@
+<h3>Interested even more? Please, fill the below form and we will contact you soon!</h3>
+
+
+
 <div class="row">
         <div class="col-md-5">
-                We will build this form using ReactiveForm based on the property "form" inside customerservice.ts
                 <form [formGroup]="this.travelsService.form" (ngSubmit)="onSubmit()">
                         <input type="hidden" formControlName="$key">
                         <div class="form-group">
                                 <label>Full name</label>
-                                we will add this class is-invalid with the help of [ngClass] directive
-                                this class will be applied when the form is submitted and we have a validation error regarding full name
                                 <input formControlName="fullName" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.fullName.errors}">
-                                now we will add an additional due to show the exact reason for the validation error so here we have the deal with this class invilid-feedback
-                                        only based on the same condition inside that
                                 <div class="invalid-feedback" *ngIf="submitted && formControls.fullName.errors">This field is required</div>
                         </div>
 
                         <div class="form-group">
                                 <label>Email</label>
-                                here we add the the invalid class based on the same condition for email and the possible error for this email control is due to the invalid email address
                                 <input formControlName="email" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.email.errors}">
                                 <div class="invalid-feedback" *ngIf="submitted && formControls.email.errors">invalid email address ..</div>
                         </div>

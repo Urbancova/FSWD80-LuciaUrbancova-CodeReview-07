@@ -33,8 +33,8 @@ import { environment } from "../environments/environment";
     AppRoutingModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),// we called initializeApp function to provide connection details
-   AngularFireDatabaseModule // we will import the classes here too
-
+    AngularFireDatabaseModule, // we will import the classes here too
+    FormsModule,
   ],
   providers: [TravelsService],
   bootstrap: [AppComponent]

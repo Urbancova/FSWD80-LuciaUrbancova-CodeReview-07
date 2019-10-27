@@ -19,6 +19,10 @@ export class TravelsService {
      location: new FormControl('')
          });
 
+  populateForm(travels){
+    this.form.setValue(travels);
+  }
+
   getTravels(){
                  this.customerList = this.firebase.list('travels');
                  return this.customerList.snapshotChanges();
@@ -34,7 +38,7 @@ export class TravelsService {
 
   updateTravels(travels){
             this.customerList.update(travels.$key,{
-               fullName: travels.fullName,
+                fullName: travels.fullName,
                 email: travels.email,
                 mobile: travels.mobile,
                 location:travels.location

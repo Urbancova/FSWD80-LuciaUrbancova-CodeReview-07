@@ -5,15 +5,16 @@
 <table class="table table-sm">
         <thead>
                 <th>Full Name</th>
-                <th>Email</th>
+                <th>E-mail</th>
                 <th>Mobile</th>
-                <th></th>
+                <th>Location</th>
         </thead>
         <ng-container *ngFor="let travels of travelsArray">
                 <tr class="table-dark" *ngIf="filterCondition(travels)">
                         <td>{{travels.fullName}}</td>
                         <td>{{travels.email}}</td>
                         <td>{{travels.mobile}}</td>
+                        <td>{{travels.location}}</td>
                         <td>
                                 <button class="btn btn-info" (click)="travelsService.populateForm(travels)">Edit
                                 </button>
