@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyC1cM3CHRef0IoAs1yzjDDf2YQ_zxIwgKg",
+    authDomain: "travex-test.firebaseapp.com",
+    databaseURL: "https://travex-test.firebaseio.com",
+    projectId: "travex-test",
+    storageBucket: "travex-test.appspot.com",
+    messagingSenderId: "291921758936",
+    appId: "1:291921758936:web:772fef8622afeeb770e5ad",
+    measurementId: "G-3YW1R8BYBK"
+	}
 };
 
 /*

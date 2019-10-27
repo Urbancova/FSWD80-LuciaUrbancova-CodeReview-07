@@ -1,0 +1,11 @@
+.jumbotron {
+	background: url("/assets/wall.jpg") 50% 50%;
+	background-size: cover;
+	
+	color: black;
+}
+
+.btn {
+	background-color: transparent;
+	border-width: 3px solid #fff;
+}
