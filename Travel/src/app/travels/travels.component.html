@@ -1,5 +1,3 @@
-<h3>Interested even more? Please, fill the below form and we will contact you soon!</h3>
-
 
 
 <div class="row">
@@ -7,19 +5,19 @@
                 <form [formGroup]="this.travelsService.form" (ngSubmit)="onSubmit()">
                         <input type="hidden" formControlName="$key">
                         <div class="form-group">
-                                <label>Full name</label>
+                                <label>City</label>
                                 <input formControlName="fullName" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.fullName.errors}">
                                 <div class="invalid-feedback" *ngIf="submitted && formControls.fullName.errors">This field is required</div>
                         </div>
 
-                        <div class="form-group">
-                                <label>Email</label>
+                        <!-- <div class="form-group">
+                                <label>Price</label>
                                 <input formControlName="email" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.email.errors}">
                                 <div class="invalid-feedback" *ngIf="submitted && formControls.email.errors">invalid email address ..</div>
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
-                                <label>Mobile</label>
+                                <label>Date    (format:DDMMYY)</label>
                                 <input formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.mobile.errors}">
                                 <div class="invalid-feedback" *ngIf="submitted && formControls.mobile.errors">
                                         <label *ngIf="formControls.mobile.errors.required">This field is required</label>
@@ -28,7 +26,7 @@
                         </div>
 
                         <div class="form-group">
-                                <label>Location</label>
+                                <label>Price</label>
                                 <input formControlName="location" class="form-control" [ngClass]="{'is-invalid':submitted && formControls.location.errors}">
                                 <div class="invalid-feedback" *ngIf="submitted && formControls.location.errors">This field is required</div>
                         </div>
